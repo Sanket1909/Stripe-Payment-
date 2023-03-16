@@ -1,0 +1,110 @@
+<html>
+<title>Stripe Payment Ninjas</title>
+
+<body>
+    <h3 style="text-align: center;font-size:x-large;">Welcome to Ninjas Store</h3>
+    
+
+    <div class="product-list" style="background-color: aqua;">
+        <h1>Products</h1>
+        
+     <div class="product-container" style="display: grid; grid-template-columns:1fr 1fr 1fr; grid-column-gap:20px;grid-row-gap:40px;"> 
+    <div class="card" style="background-color: white; border-radius:10px; padding:1em; box-shadow: 0px 10px 5px black; text-align:center; max-width:100%">
+        <div class="title" style="font-size: 18px; font-weight: bold">
+            Headphone
+
+        </div>
+        <div class="image" >
+           <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1505740420928-5e560c06d30e.jpeg?v=1585724732029" style="max-width: 100%;"/>
+        </div>
+
+        <form action="payment" method="POST">
+            <script
+                src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="<%= key %>"
+                data-amount="500"
+                data-currency="cad"
+                data-name="HeadPhone"
+                data-description="Buy  Headphone"
+                data-locale="auto" >
+                </script>
+            </form>
+        
+    </div>
+
+    <div class="card" style="background-color: white; border-radius:10px; padding:1em; box-shadow: 0px 10px 5px black; text-align:center; max-width:100%">
+        <div class="title" style="font-size: 18px; font-weight: bold">
+            Camera
+
+        </div>
+        <div class="image" >
+           <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1526170375885-4d8ecf77b99f.jpeg?v=1585724749339" style="max-width: 100%;"/>
+        </div>
+
+        <form action="payment" method="POST">
+            <script
+                src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="<%= key %>"
+                data-amount="1000"
+                data-currency="cad"
+                data-name="Camera"
+                data-description="Buy  Camera"
+                data-locale="auto" >
+                </script>
+            </form>
+        
+    </div>
+
+    <div class="card" style="background-color: white; border-radius:10px; padding:1em; box-shadow: 0px 10px 5px black; text-align:center; max-width:100%">
+        <div class="title" style="font-size: 18px; font-weight: bold">
+           PlayStation 5
+
+        </div>
+        <div class="image" >
+           <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1486401899868-0e435ed85128.jpeg?v=1585724757848" style="max-width: 100%;"/>
+        </div>
+
+        <form action="payment" method="POST">
+            <script
+                src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="<%= key %>"
+                data-amount="50000"
+                data-currency="cad"
+                data-name="PlayStation 5"
+                data-description="Buy PlayStation 5"
+                data-locale="auto" >
+                </script>
+            </form>
+        
+    </div>
+
+    <div class="card" style="background-color: white; border-radius:10px; padding:1em; box-shadow: 0px 10px 5px black; text-align:center; max-width:100%">
+        <div class="title" style="font-size: 18px; font-weight: bold">
+            Shoes
+
+        </div>
+        <div class="image" >
+           <img src="https://cdn.glitch.com/5f8445e6-7cb3-47ef-8b81-884235184212%2Fphoto-1515955656352-a1fa3ffcd111.jpeg?v=1585724733237" style="max-width: 100%;"/>
+        </div>
+
+        <form action="payment" method="POST">
+            <script
+                src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="<%= key %>"
+                data-amount="400"
+                data-currency="cad"
+                data-name="Shoes"
+                data-description="Buy Shoes"
+                data-locale="auto" >
+                </script>
+            </form>
+        
+    </div>
+    </div>
+</div>
+</body>
+</html>
